@@ -3,164 +3,218 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BioLink - Maria Barbara Zavala</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+  <title>BioLink - María Barbara Zavala</title>
+  <link href="https://fonts.googleapis.com/css2?family=Helvetica Neue,Helvetica,Arial,sans-serif&display=swap" rel="stylesheet">
   <style>
-    body {
+    * {
       margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background-color: #ffffff;
-      color: #000000;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      background-color: #000;
+      color: #fff;
+      line-height: 1.4;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #fff;
+      min-height: 100vh;
     }
     .cover {
       width: 100%;
-      height: 300px;
-      background-color: #000000;
+      height: 150px;
+      background-color: #000;
       position: relative;
     }
     .profile-pic {
-      width: 180px;
-      height: 180px;
+      width: 100px;
+      height: 100px;
       border-radius: 50%;
-      border: 4px solid #000000;
+      border: 3px solid #000;
       position: absolute;
-      left: 20px;
-      bottom: -90px;
+      bottom: -50px;
+      left: 15px;
       object-fit: cover;
     }
-    .content {
-      max-width: 800px;
-      width: 90%;
-      margin: 0 0 0 20px;
-      padding: 20px;
+    .profile-info {
+      padding: 60px 15px 15px;
     }
     .name {
-      font-family: 'Poppins', sans-serif;
-      font-size: 20px;
-      font-weight: bold;
-      margin-top: 100px;
-      text-align: left;
+      font-size: 18px;
+      font-weight: 700;
+      color: #000;
     }
-    .subtitle {
-      font-size: 11px;
-      margin: 5px 0;
-      text-align: left;
-    }
-    .section-title {
-      font-size: 13px;
-      font-weight: bold;
-      margin: 20px 0 10px;
-      text-align: left;
+    .username {
+      font-size: 14px;
+      color: #657786;
+      margin-bottom: 8px;
     }
     .bio {
-      font-size: 12px;
+      font-size: 14px;
       line-height: 1.5;
-      letter-spacing: 0;
-      word-spacing: -0.5px;
-      margin-bottom: 20px;
       text-align: justify;
+      margin-bottom: 15px;
+      color: #000;
     }
     .bio p {
-      margin: 10px 0;
+      margin-bottom: 8px;
+    }
+    .section-title {
+      font-size: 16px;
+      font-weight: 700;
+      color: #000;
+      margin: 15px 0 8px;
+    }
+    .link-section {
+      margin-top: 20px;
     }
     .link {
-      font-size: 12px;
-      font-weight: bold;
-      letter-spacing: 0;
-      word-spacing: -0.5px;
-      text-align: justify;
+      font-size: 14px;
+      margin: 5px 0;
     }
     .link a {
-      color: #000000;
+      color: #1DA1F2;
+      text-decoration: none;
+      word-break: break-all;
+    }
+    .link a:hover {
       text-decoration: underline;
     }
-    @media (max-width: 600px) {
+    .temario {
+      font-size: 14px;
+      line-height: 1.5;
+      text-align: justify;
+      color: #000;
+    }
+    .temario p {
+      margin-bottom: 8px;
+    }
+    .temario strong {
+      color: #000;
+      font-weight: 700;
+    }
+    @media (min-width: 600px) {
+      .container {
+        max-width: 800px;
+        border: 1px solid #333;
+        border-radius: 8px;
+        margin: 20px auto;
+      }
       .cover {
-        height: 250px;
+        height: 200px;
       }
       .profile-pic {
-        width: 150px;
-        height: 150px;
-        bottom: -75px;
-        left: 10px;
+        width: 120px;
+        height: 120px;
+        bottom: -60px;
+        left: 20px;
       }
-      .content {
-        margin: 0 0 0 10px;
-        padding: 15px;
+      .profile-info {
+        padding: 80px 20px 20px;
       }
       .name {
-        font-size: 18px;
-        margin-top: 80px;
+        font-size: 20px;
       }
-      .subtitle {
-        font-size: 10px;
+      .username {
+        font-size: 15px;
+      }
+      .bio, .link, .temario {
+        font-size: 15px;
       }
       .section-title {
-        font-size: 12px;
+        font-size: 18px;
       }
-      .bio {
-        font-size: 11px;
+    }
+    @media (max-width: 400px) {
+      .cover {
+        height: 120px;
       }
-      .link {
-        font-size: 11px;
+      .profile-pic {
+        width: 80px;
+        height: 80px;
+        bottom: -40px;
+        left: 10px;
+      }
+      .profile-info {
+        padding: 50px 10px 10px;
+      }
+      .name {
+        font-size: 16px;
+      }
+      .username {
+        font-size: 13px;
+      }
+      .bio, .link, .temario {
+        font-size: 13px;
+      }
+      .section-title {
+        font-size: 14px;
       }
     }
   </style>
 </head>
 <body>
-  <div class="cover">
-    <img src="https://i.postimg.cc/QttX9sYL/Mar-a-Barbara-Zavala-2023-0619-135129-0002.png" alt="Foto de perfil" class="profile-pic">
-  </div>
-  <div class="content">
-    <div class="name">Maria Barbara Zavala</div>
-    <div class="subtitle">Mi blog profesional en administración, gestión empresarial, liderazgo, filosofía, mentalidad, conocimiento y criterio.</div>
-    <div class="section-title">Mis colecciones en mi profesión y otras disciplinas y ciencias relacionadas a mi carrera:</div>
-    <div class="bio">
-      <p>•Mi mentalidad laboral y profesional.
-      <p>•Mi criterio laboral y profesional.
-      <p>•Mi conocimiento laboral y profesional.
-      <p>•Mi filosofía laboral y profesional.
-      <p>•Mi ética, valores y principios en un trabajo y en mi vida profesional.
-      <p>•Información profesional en diferentes niveles académicos, profesionales, laborales y empresariales.</p>
-      <p>•Filosofía profesional, empresarial, corporativa, organizacional según la enciclopedia profesional.
-      <p>•Liderazgo profesional, liderazgo corporativo, liderazgo ejecutivo, liderazgo empresarial, según la enciclopedia profesional.</p>
-      <p>•Axiología profesional, corporativa, empresarial y corporativa, según la enciclopedia profesinal.</p>
-      <p>•Mentalidad profesional, empresarial, corporativa y organizacional, según la enciclopedia profesional, expertos, maestros, críticos, políticos, CEO, directores, fundadores y empresarios.</p>
-      <p>•Ética, valores y principios en mi carrera, ámbito empresarial y profesional.</p>
-      <p>Diseñadora en arte digital. Estudiante en programación. Licenciada en administración financiera. Especialista en gestión empresarial y liderazgo sistémico.</p>
-      <p>•Mis colecciones en mentalidad, criterio, filosofía, liderazgo, axiología, ética, principios, valores, cultura organizacional, conocimiento: Análisis, opiniones, citas, frases, pensamientos, escritos, meditaciones, fragmentos, reflexiones, estudio e información sobre mi profesión, ámbito empresarial y otras disciplinas relacionadas a mi carrera.</p>
+  <div class="container">
+    <div class="cover">
+      <img src="https://i.postimg.cc/G4HZzsLn/file-00000000804461f59cdaf47e1f8be8f8.png" alt="Foto de perfil" class="profile-pic">
     </div>
-    <div class="section-title">Mis colecciones, Mis links y blogs:</div>
-    <div class="link">
-      <a href="https://drive.google.com/drive/folders/1UEKf50uZjv4vN1SRgZTP1MF3_o5FwRWM" target="_blank">Mis colecciones</a>
-    </div>
-    <div class="link">
-      <a href="https://bio.site/mariabarbarazav" target="_blank">bio.site/mariabarbarazav</a>
-    </div>
-    <div class="link">
-      <a href="https://drive.google.com/drive/folders/1C0BxrxIGAxFgAe9Z1994SnIlJ9aBAjde" target="_blank">Temas de mi interés</a>
-    </div>
-    <div class="section-title">Temario</div>
-    <div class="bio">
-      <p><strong>Noticias y tendencias</strong><br>Política, empresas, negocios, cultura.</p>
-      <p><strong>Historia</strong><br>Historia política, económica, empresarial y universal.
-      <p><strong>Ciencias administrativas</strong><br>Administración de empresas, administración general, administración financiera, administración de recursos humanos, gestión empresarial, gestión estratégica, gestión de proyectos, comportamiento organizacional, emprendimiento y creación de empresas, dirección de empresas, dirección de proyectos, dirección financiera, finanzas, contabilidad, liderazgo, mercadotecnia, publicidad, negocios, empresas, negocios internacionales, comercio internacional. Ciencias administrativas, ciencias de la gestión, ciencias gerenciales, ciencias del management, ciencias económicas, ciencias empresariales, ciencias organizacionales, ciencias financieras, ciencias contables, ciencias monetarias, ciencias aplicadas a la empresa.</p>
-      <p><strong>Ciencias sociales</strong><br>Ciencias políticas, geopolítica, administración pública, derecho administrativo, economía pública, gestión pública, relaciones internacionales.</p>
-      <p><strong>Liderazgo y autoliderazgo</strong><br>Liderazgo corporativo, liderazgo organizacional, liderazgo empresarial.</p>
-      <p><strong>Mentalidad y éxito</strong><br>Motivación, filosofía y conocimiento con dirección a nivel profesional, laboral y empresarial.
-      <p><strong>Filosofía empresarial</strong><br>Axiología empresarial, ética y valores en la empresa, conocimiento, mentalidad empresarial y profesional.</p>
-      <p><strong>Administración</strong><br>Todos los temas en administración.</p>
-      <p><strong>Finanzas</strong><br>Finanzas personales, finanzas corporativas, finanzas públicas, mercados financieros, inversiones, gestión de riesgos financieros, finanzas internacionales, instituciones financieras, análisis financiero, planeación financiera, matemáticas financieras, economía financiera, ingeniería financiera.</p>
-      <p><strong>Contabilidad</strong><br>Contabilidad financiera, contabilidad de costos, contabilidad de gestión o administrativa, contabilidad fiscal o tributaria, contabilidad internacional, auditoría contable.</p>
-      <p><strong>Diseño gráfico</strong><br>Arte, diseño gráfico, diseño de marca, paletas de colores.</p>
-      <p><strong>Conocimiento empresarial</strong><br>Ciencias administrativas y temas relacionados con empresas y negocios.</p>
-      <p><strong>Educación y aprendizaje</strong><br>Libros y conocimiento en el ámbito empresarial y ciencias administrativas.</p>
-      <p><strong>Productividad</strong><br>A nivel profesional, laboral, empresarial y académico.</p>
-      <p><strong>Negocios y emprendimiento</strong><br>Ideas de negocio.</p>
-      <p><strong>Tecnología e innovación</strong><br>Ámbito empresarial y ciencias administrativas.</p>
-      <p><strong>Empresa</strong><br>Datos Generales, Sector y Actividad, Modelo de Negocio, Clientes y Mercado, Competencia, Finanzas, Estrategia Corporativa, Cultura y Talento Humano, Tecnología e Innovación, Impacto Social y Ambiental, Historia y Evolución, Reputación y Medios, Análisis Estratégico (Avanzado), Fuentes para investigar.</p>
-      <p><strong>Trabajo en una empresa</strong><br>Áreas de trabajo o departamentos, Tipos de puestos y jerarquías, Condiciones laborales (sueldo, horario, beneficios), Modalidad (presencial, híbrido, remoto), Requisitos para ingresar, Ambiente laboral, Estabilidad y oportunidades de crecimiento, Rotación de personal, Evaluación del desempeño, Relaciones entre empleados y jefes, Cultura organizacional, Formación y desarrollo interno, Sindicatos y derechos laborales, Testimonios de empleados (Glassdoor, foros).</p>
-      <p><strong>El profesional dentro de una empresa</strong><br>Perfil profesional que ocupa ciertos cargos, Formación académica requerida, Habilidades blandas y técnicas necesarias, Responsabilidades y funciones, Estilo de liderazgo (si es jefe o directivo), Trayectoria laboral (LinkedIn, entrevistas), Aportes o logros importantes, Valores y ética profesional, Adaptación a la cultura de la empresa, Relación con el equipo y liderazgo, Visión del profesional sobre su trabajo, Desarrollo y crecimiento dentro de la empresa, Reconocimientos o premiaciones internas, Participación en decisiones estratégicas.</p>
+    <div class="profile-info">
+      <div class="name">María Barbara Zavala</div>
+      <div class="username">@mariabarbarazav</div>
+      <div class="bio">
+        Mi blog profesional en administración, gestión empresarial, liderazgo, filosofía, mentalidad, conocimiento y criterio.
+      </div>
+      <div class="section-title">Mis colecciones en mi profesión y otras disciplinas y ciencias relacionadas a mi carrera:</div>
+      <div class="bio">
+        <p>• Mi mentalidad laboral y profesional.</p>
+        <p>• Mi criterio laboral y profesional.</p>
+        <p>• Mi conocimiento laboral y profesional.</p>
+        <p>• Mi filosofía laboral y profesional.</p>
+        <p>• Mi ética, valores y principios en un trabajo y en mi vida profesional.</p>
+        <p>• Información profesional en diferentes niveles académicos, profesionales, laborales y empresariales.</p>
+        <p>• Filosofía profesional, empresarial, corporativa, organizacional según la enciclopedia profesional.</p>
+        <p>• Liderazgo profesional, liderazgo corporativo, liderazgo ejecutivo, liderazgo empresarial, según la enciclopedia profesional.</p>
+        <p>• Axiología profesional, corporativa, empresarial y organizacional, según la enciclopedia profesional.</p>
+        <p>• Mentalidad profesional, empresarial, corporativa y organizacional, según la enciclopedia profesional, expertos, maestros, críticos, políticos, CEO, directores, fundadores y empresarios.</p>
+        <p>• Ética, valores y principios en mi carrera, ámbito empresarial y profesional.</p>
+        <p>Diseñadora en arte digital. Estudiante en programación. Licenciada en administración financiera. Especialista en gestión empresarial y liderazgo sistémico.</p>
+        <p>• Mis colecciones en mentalidad, criterio, filosofía, liderazgo, axiología, ética, principios, valores, cultura organizacional, conocimiento: Análisis, opiniones, citas, frases, pensamientos, escritos, meditaciones, fragmentos, reflexiones, estudio e información sobre mi profesión, ámbito empresarial y otras disciplinas relacionadas a mi carrera.</p>
+      </div>
+      <div class="section-title">Temario</div>
+      <div class="temario">
+        <p><strong>Noticias y tendencias</strong><br>Política, empresas, negocios, cultura.</p>
+        <p><strong>Historia</strong><br>Historia política, económica, empresarial y universal.</p>
+        <p><strong>Ciencias administrativas</strong><br>Administración de empresas, administración general, administración financiera, administración de recursos humanos, gestión empresarial, gestión estratégica, gestión de proyectos, comportamiento organizacional, emprendimiento y creación de empresas, dirección de empresas, dirección de proyectos, dirección financiera, finanzas, contabilidad, liderazgo, mercadotecnia, publicidad, negocios, empresas, negocios internacionales, comercio internacional. Ciencias administrativas, ciencias de la gestión, ciencias gerenciales, ciencias del management, ciencias económicas, ciencias empresariales, ciencias organizacionales, ciencias financieras, ciencias contables, ciencias monetarias, ciencias aplicadas a la empresa.</p>
+        <p><strong>Ciencias sociales</strong><br>Ciencias políticas, geopolítica, administración pública, derecho administrativo, economía pública, gestión pública, relaciones internacionales.</p>
+        <p><strong>Liderazgo y autoliderazgo</strong><br>Liderazgo corporativo, liderazgo organizacional, liderazgo empresarial.</p>
+        <p><strong>Filosofía empresarial</strong><br>Axiología empresarial, ética y valores en la empresa, conocimiento, mentalidad empresarial y profesional.</p>
+        <p><strong>Mentalidad y éxito</strong><br>Motivación, filosofía y conocimiento con dirección a nivel profesional, laboral y empresarial.</p>
+        <p><strong>Administración</strong><br>Todos los temas en administración.</p>
+        <p><strong>Finanzas</strong><br>Finanzas personales, finanzas corporativas, finanzas públicas, mercados financieros, inversiones, gestión de riesgos financieros, finanzas internacionales, instituciones financieras, análisis financiero, planeación financiera, matemáticas financieras, economía financiera, ingeniería financiera.</p>
+        <p><strong>Contabilidad</strong><br>Contabilidad financiera, contabilidad de costos, contabilidad de gestión o administrativa, contabilidad fiscal o tributaria, contabilidad internacional, auditoría contable.</p>
+        <p><strong>Diseño gráfico</strong><br>Arte, diseño gráfico, diseño de marca, paletas de colores.</p>
+        <p><strong>Conocimiento empresarial</strong><br>Ciencias administrativas y temas relacionados con empresas y negocios.</p>
+        <p><strong>Educación y aprendizaje</strong><br>Libros y conocimiento en el ámbito empresarial y ciencias administrativas.</p>
+        <p><strong>Productividad</strong><br>A nivel profesional, laboral, empresarial y académico.</p>
+        <p><strong>Negocios y emprendimiento</strong><br>Ideas de negocio.</p>
+        <p><strong>Tecnología e innovación</strong><br>Ámbito empresarial y ciencias administrativas.</p>
+        <p><strong>Empresa</strong><br>Datos Generales, Sector y Actividad, Modelo de Negocio, Clientes y Mercado, Competencia, Finanzas, Estrategia Corporativa, Cultura y Talento Humano, Tecnología e Innovación, Impacto Social y Ambiental, Historia y Evolución, Reputación y Medios, Análisis Estratégico (Avanzado), Fuentes para investigar.</p>
+        <p><strong>Trabajo en una empresa</strong><br>Áreas de trabajo o departamentos, Tipos de puestos y jerarquías, Condiciones laborales (sueldo, horario, beneficios), Modalidad (presencial, híbrido, remoto), Requisitos para ingresar, Ambiente laboral, Estabilidad y oportunidades de crecimiento, Rotación de personal, Evaluación del desempeño, Relaciones entre empleados y laborales, Cultura Organizacional, Formación y Desarrollo Interno, Sindicatos y Derechos Laborales, Testimonios de empleados (Glassdoor, foros).</p>
+        <p><strong>El profesional dentro de una empresa</strong><br>Perfil profesional que ocupa ciertos cargos, Formación académica requerida, Habilidades blandas y técnicas necesarias, Responsabilidades y funciones, Estilo de liderazgo (si es jefe o directivo), Trayectoria laboral (LinkedIn, entrevistas), Aportes o logros importantes, Valores y ética profesional, Adaptación a la cultura de la empresa, Relación con el equipo y liderazgo, Visión del profesional sobre su trabajo, Desarrollo y crecimiento dentro de la empresa, Reconocimientos o premiaciones internas, Participación en decisiones estratégicas.</p>
+      </div>
+      <div class="section-title link-section">Mis colecciones, Mis links y blogs:</div>
+      <div class="link">
+        <a href="https://drive.google.com/drive/folders/1UEKf50uZjv4vN1SRgZTP1MF3_o5FwRWM" target="_blank">Mis colecciones</a>
+      </div>
+      <div class="link">
+        <a href="https://bio.site/mariabarbarazav" target="_blank">bio.site/mariabarbarazav</a>
+      </div>
+      <div class="link">
+        <a href="https://drive.google.com/drive/folders/1C0BxrxIGAxFgAe9Z1994SnIlJ9aBAjde" target="_blank">Temas de mi interés</a>
+      </div>
     </div>
   </div>
 </body>
